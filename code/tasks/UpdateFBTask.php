@@ -1,3 +1,4 @@
+/*
 <?php
 
 class UpdateFBTask extends BuildTask {
@@ -9,7 +10,7 @@ class UpdateFBTask extends BuildTask {
     protected $enabled = true;
  
     public function run($request) {
-        $data = DataObject::get("Object");
+        $data = OpenGraphExtensions::get();
         
         echo 'Updating Open Graph Data ...<br>';
         
@@ -23,3 +24,4 @@ class UpdateFBTask extends BuildTask {
        echo 'Updated ' . $team->count() . ' records.';
     }
 }
+*/
