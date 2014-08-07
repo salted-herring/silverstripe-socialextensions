@@ -9,12 +9,12 @@ class UpdateFBTask extends BuildTask {
     protected $enabled = true;
  
     public function run($request) {
-        $data = DataObject::get();
+        $data = DataObject::get("Object");
         
         echo 'Updating Open Graph Data ...<br>';
         
         foreach($data as $record) {
-        	if(cin_array("FBInterface", class_implements($record->ClassName))) {
+        	if(in_array("FBInterface", class_implements($record->ClassName))) {
 	        	$record->forceChange();
 				$record->write();
         	}
