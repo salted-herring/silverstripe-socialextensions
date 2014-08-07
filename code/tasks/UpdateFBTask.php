@@ -1,6 +1,6 @@
-/*
-<?php
 
+<?php
+/*
 class UpdateFBTask extends BuildTask {
  
     protected $title = 'Update Facebook OG Data';
