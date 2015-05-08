@@ -8,13 +8,10 @@
 			'OGTitle'		=> 'Varchar(255)',
 			'OGDescription'	=> 'Varchar(255)'
 		);
+		
 		public static $has_one =  array(
 			'OGImage'		=> 'Image'
 		);
-		
-		function __construct() {
-			parent::__construct();
-		}
 		
 		function getCMSFields() {	 
 			$fields = parent::getCMSFields();

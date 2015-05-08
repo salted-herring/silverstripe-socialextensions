@@ -25,7 +25,7 @@
 			$fields->addFieldsToTab('Root.Social.Open Graph', array(
 				$title = new TextField('OGTitle', 'Title'),
 				$description = new TextareaField('OGDescription', 'Description'),
-				$img = new UploadField('OGImage', 'Image');
+				$img = new UploadField('OGImage', 'Image')
 			));
 			
 			//
