@@ -19,19 +19,29 @@
 		 * @param FieldList $fields
 		 */
 		public function updateCMSFields(FieldList $fields) {
-
-			$fields->addFieldsToTab('Root.Social', array(
-				new Tab(
-					$title = 'OpenGraph',
+			
+			$og = ToggleCompositeField::create(
+				'OG',
+				new LabelField('Open', 'Open Graph details'),
+				array(
 					new TextField('OGTitle', 'Title'),
-					new TextareaField('OGDescription', 'Description'),
+					new TextField('OGDescription', 'Description'),
 					new UploadField('OGImage', 'Image')
-				),
-				new Tab(
-					$title = 'Twitter',
+				)
+			);
+			$og->setStartClosed(false);
+			
+			$twitter = ToggleCompositeField::create(
+				'Twitter',
+				new LabelField('twit', 'Twitter Details'),
+				array(
 					$name = new TextField('TwitterName', 'Twitter Name')
 				)
-			));
+			);
+			$twitter->setStartClosed(false);
+			
+			$fields->addFieldToTab('Root.Social', $og);
+			$fields->addFieldToTab('Root.Social', $twitter);
 			
 			$name->setDescription('Your account name that content will be shared from (don\'t include the @).');
 		}
