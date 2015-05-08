@@ -32,7 +32,7 @@
 			// Twitter
 			//
 			$fields->addFieldToTab('Root.Social.Twitter', $name = new TextField('TwitterName', 'Twitter Name'));
-			$name->setDescription('Your account name that content will be shared from (don\'t include the @).);
+			$name->setDescription('Your account name that content will be shared from (don\'t include the @).');
 		}
 	
 	}
