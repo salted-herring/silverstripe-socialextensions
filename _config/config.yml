@@ -4,3 +4,4 @@ Name: socialextensions
 SiteConfig:
   extensions:
     - OGSettings
+    - SocialSettings
