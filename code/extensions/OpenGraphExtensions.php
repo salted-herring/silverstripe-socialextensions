@@ -5,11 +5,11 @@
 	 * */
 	class OpenGraphExtensions extends DataExtension {
 		public static $db = array(
-			'OGTitle' => 'Varchar(255)',
-	        'OGDescription' => 'Varchar(255)'
+			'OGTitle'		=> 'Varchar(255)',
+			'OGDescription'	=> 'Varchar(255)'
 		);
 		public static $has_one =  array(
-			'OGImage' => 'Image'
+			'OGImage'		=> 'Image'
 		);
 		
 		function __construct() {
@@ -17,15 +17,15 @@
 		}
 		
 		function getCMSFields() {	 
-		    $fields = parent::getCMSFields();
-		    return $fields;
+			$fields = parent::getCMSFields();
+			return $fields;
 		}
-	    
+
 		public function updateCMSFields(FieldList $fields) {
 			$fields->removeByName('OGTitle');
 			$fields->removeByName('OGDescription');
 			$fields->removeByName('OGImage');
-			
+
 			$og = ToggleCompositeField::create(
 				'OG',
 				new LabelField('Open', 'Open Graph Tags - for sharing'),
