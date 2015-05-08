@@ -1,3 +1,6 @@
 ---
 Name: socialextensions
 ---
+SiteConfig:
+  extensions:
+    - TwitterSettings
