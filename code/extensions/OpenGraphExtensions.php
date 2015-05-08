@@ -76,8 +76,7 @@
 			$fields = array(
 				'OGTitle',
 				'OGDescription',
-				'OGImage',
-				'TwitterName',
+				'OGImage'
 			);
 	
 			// Can't find it?
