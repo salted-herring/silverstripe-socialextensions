@@ -22,7 +22,7 @@
 			//
 			// Generic OG Tags.
 			//
-			$fields->addFieldsToTab('Root.Social.Open Graph', array(
+			$fields->addFieldsToTab('Root.Social.OpenGraph', array(
 				$title = new TextField('OGTitle', 'Title'),
 				$description = new TextareaField('OGDescription', 'Description'),
 				$img = new UploadField('OGImage', 'Image')
