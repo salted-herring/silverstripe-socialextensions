@@ -27,3 +27,9 @@ class Page extends SiteTree implements FBInterface {
   ...
 }
 ```
+
+## To Do:
+
+- Allow for multiple social channels.
+- Allow for multiple images with Facebook.
+- Allow for config setting to enable/disable features per DataObject.
