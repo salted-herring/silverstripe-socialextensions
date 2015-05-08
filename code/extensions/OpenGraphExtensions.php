@@ -86,17 +86,17 @@
 	
 			if ($var == 'OGImage') {
 				// Has it been overwritten on the page?
-				if ($this->OGImage()) {
+				if ($this->owner->OGImage()) {
 		
 					// Yes.
-					return $this->OGImage();
+					return $this->owner->OGImage();
 				}
 			} else {
 				// Has it been overwritten on the page?
-				if ($this->$var) {
+				if ($this->owner->$var) {
 		
 					// Yes.
-					return $this->$var;
+					return $this->owner->$var;
 				}
 			}
 			
